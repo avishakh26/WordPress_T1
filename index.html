@@ -1022,7 +1022,6 @@ Where humor meets creativity in code and ideas.</p>
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
-  <script src="js/config.js"></script>
   <script>
   (function () {
     var el = document.getElementById('typing-animation');
@@ -1046,8 +1045,8 @@ Where humor meets creativity in code and ideas.</p>
     var form = document.getElementById('contact-form');
     if (!form) return;
 
-    // Messages are posted to a Discord channel through the webhook set in js/config.js (not committed).
-    var WEBHOOK_URL = (window.SITE_CONFIG || {}).discordWebhookUrl;
+    // Sent to the serverless function in api/contact.js, which forwards it to Discord.
+    var ENDPOINT = '/api/contact';
     var COOLDOWN_MS = 30000;
 
     var status = form.querySelector('.form-status');
@@ -1058,34 +1057,6 @@ Where humor meets creativity in code and ideas.</p>
     function setStatus(text, type) {
       status.textContent = text;
       status.className = 'form-status' + (type ? ' ' + type : '');
-    }
-
-    // Trim to Discord's limits and stop markdown links/mentions from being abused.
-    function clean(value, max) {
-      value = String(value || '').trim().replace(/@/g, '@\u200b');
-      return value.length > max ? value.slice(0, max - 1) + '\u2026' : value;
-    }
-
-    function buildPayload(data) {
-      var fields = [
-        { name: 'Name', value: clean(data.name, 256), inline: true },
-        { name: 'Email', value: clean(data.email, 256), inline: true }
-      ];
-      if (data.phone) fields.push({ name: 'Number', value: clean(data.phone, 64), inline: true });
-      if (data.company) fields.push({ name: 'Company', value: clean(data.company, 256), inline: true });
-
-      return {
-        username: 'Portfolio Contact Form',
-        allowed_mentions: { parse: [] },
-        embeds: [{
-          title: 'New message from your portfolio',
-          description: clean(data.message, 4000),
-          color: 0xffbd39,
-          fields: fields,
-          footer: { text: location.hostname || 'portfolio' },
-          timestamp: new Date().toISOString()
-        }]
-      };
     }
 
     form.addEventListener('input', function (e) {
@@ -1110,13 +1081,6 @@ Where humor meets creativity in code and ideas.</p>
         return;
       }
 
-      // bots fill the hidden field; pretend it worked
-      if (form._honey.value) {
-        form.reset();
-        setStatus("Thanks! Your message has been sent. I'll reply soon.", 'success');
-        return;
-      }
-
       if (Date.now() - lastSent < COOLDOWN_MS) {
         setStatus('Please wait a few seconds before sending another message.', 'error');
         return;
@@ -1127,27 +1091,21 @@ Where humor meets creativity in code and ideas.</p>
         email: form.email.value,
         phone: form.phone.value,
         company: form.company.value,
-        message: form.message.value
+        message: form.message.value,
+        _honey: form._honey.value
       };
 
       button.disabled = true;
       label.textContent = 'Sending...';
       setStatus('');
 
-      if (!WEBHOOK_URL) {
-        setStatus('Sorry, the contact form is not set up yet. Please email me at avishakh88@gmail.com.', 'error');
-        button.disabled = false;
-        label.textContent = 'Send Message';
-        return;
-      }
-
-      fetch(WEBHOOK_URL, {
+      fetch(ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(buildPayload(data))
+        body: JSON.stringify(data)
       })
         .then(function (res) {
-          if (!res.ok) throw new Error('Webhook responded ' + res.status);
+          if (!res.ok) throw new Error('Contact endpoint responded ' + res.status);
           lastSent = Date.now();
           form.reset();
           setStatus("Thanks! Your message has been sent. I'll reply soon.", 'success');

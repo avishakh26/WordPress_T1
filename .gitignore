@@ -1,5 +1,7 @@
-# secrets
-js/config.js
+# local secrets
+.env
+.env.local
+.vercel
 
 # OS / editor files
 .DS_Store
