@@ -1,0 +1,9 @@
+# secrets
+js/config.js
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+
+# local tooling
+.claude/

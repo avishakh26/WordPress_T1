@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Avishakh's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css?v=20261003">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  display: inline-block;
+  min-height: 1.3em;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+}
+
+#typing-animation::after {
+  content: "|";
+  margin-left: 2px;
+  color: #ffbd39;
+  animation: typing-cursor 0.8s step-end infinite;
+}
+
+@keyframes typing-cursor {
+  50% { opacity: 0; }
+}
+
+
+/* hero: text only, centered and larger */
+.owl-carousel.home-slider .slider-item .slider-text .one-forth .text {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+  text-align: center;
+}
+
+.owl-carousel.home-slider .slider-item .slider-text .subheading {
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+
+.owl-carousel.home-slider .slider-item .slider-text h1 {
+  font-size: 84px;
+  line-height: 1.1;
+}
+
+.owl-carousel.home-slider .slider-item .slider-text h2 {
+  font-size: 38px;
+  color: #fff;
+}
+
+#typing-animation {
+  font-size: 40px;
+}
+
+.owl-carousel.home-slider .slider-item .slider-text p .btn {
+  font-size: 14px;
+  margin: 0 6px;
+}
+
+@media (min-width: 992px) {
+  .owl-carousel.home-slider .slider-item .slider-text .one-forth .text {
+    left: 0;
+    right: 0;
+    max-width: 900px;
+    padding: 0 1.5em;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .owl-carousel.home-slider .slider-item .slider-text h1 { font-size: 60px; }
+  .owl-carousel.home-slider .slider-item .slider-text h2 { font-size: 30px; }
+  #typing-animation { font-size: 32px; }
+}
+
+@media (max-width: 767.98px) {
+  .owl-carousel.home-slider .slider-item .slider-text .one-forth { width: 100%; }
+  .owl-carousel.home-slider .slider-item .slider-text h1 { font-size: 44px; }
+  .owl-carousel.home-slider .slider-item .slider-text h2 { font-size: 24px; }
+  #typing-animation { font-size: 26px; }
+}
+
+
+/* ---------- responsive layout ---------- */
+
+/* hero text: fill the slide instead of the template's fixed 1200px box */
+.owl-carousel.home-slider .slider-item .slider-text {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 900px;
+}
+
+.owl-carousel.home-slider .slider-item .slider-text .one-forth {
+  width: 100% !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+}
+
+/* section underline was only defined for >=768px */
+.underline {
+  width: 100%;
+  height: 4px;
+  margin-top: 5px;
+  opacity: .5;
+  background-image: linear-gradient(to right, #fff 0%, #f4f47d 20%, #eeee24 50%, #ffbd39 100%);
+}
+
+.big-4 {
+  max-width: 100%;
+}
+
+.contact-info .box p,
+.about-info span {
+  overflow-wrap: anywhere;
+}
+
+.question-cta h2 {
+  line-height: 1.6;
+}
+
+.question-cta .btn {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.ftco-footer-social li {
+  margin: 5px;
+}
+
+.ftco-footer-social li.normal-txt {
+  margin-right: 10px;
+}
+
+@media (max-width: 991.98px) {
+  .ftco-about .img-about {
+    margin-bottom: 2.5rem;
+  }
+
+  .ftco-about .about-img {
+    max-width: 220px;
+    margin: 0 auto 1.5rem;
+  }
+
+  .ftco-hireme h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* phone hero: size to its content instead of the full screen height */
+  .owl-carousel.home-slider,
+  .owl-carousel.home-slider .slider-item {
+    height: auto;
+  }
+
+  .owl-carousel.home-slider .slider-item .slider-text {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    padding: 70px 0 40px;
+  }
+
+  .owl-carousel.home-slider .slider-item .slider-text .one-forth {
+    position: relative;
+    padding: 0;
+  }
+
+  .owl-carousel.home-slider .slider-item .slider-text .one-forth .text {
+    padding: 0;
+  }
+
+  .owl-carousel.home-slider .slider-item .slider-text p .btn {
+    padding-left: 1.4rem !important;
+    padding-right: 1.4rem !important;
+  }
+
+  #home-section + section {
+    padding-top: 3em;
+  }
+
+  .heading-section h1.big {
+    display: none;
+  }
+
+  .big-4 {
+    font-size: 32px;
+  }
+
+  .resume-wrap {
+    padding: 20px;
+  }
+
+  .resume-wrap .date,
+  .resume-wrap h2 {
+    font-size: 22px;
+  }
+
+  .ftco-about ul.about-info li span:first-child {
+    width: 110px;
+    flex-shrink: 0;
+  }
+
+  .ftco-about .counter-wrap .text p {
+    font-size: 18px;
+  }
+
+  .ftco-counter .block-18 {
+    padding: 20px 10px;
+  }
+
+  .ftco-hireme h2 {
+    font-size: 26px;
+  }
+
+  .question-cta h2 {
+    font-size: 26px;
+  }
+
+  .question-cta .btn {
+    display: block;
+    width: max-content;
+    margin: 15px auto 0;
+  }
+
+  .ftco-footer-social li.normal-txt {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar-brand {
+    font-size: 17px !important;
+    margin-right: 0;
+  }
+
+  .ftco-navbar-light .navbar-toggler {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 14px;
+  }
+
+  .owl-carousel.home-slider .slider-item .slider-text h1 {
+    font-size: 36px;
+  }
+
+  #typing-animation {
+    font-size: 22px;
+  }
+
+  .owl-carousel.home-slider .slider-item .slider-text h2 {
+    font-size: 20px;
+  }
+
+  .owl-carousel.home-slider .slider-item .slider-text p .btn {
+    margin: 5px;
+  }
+
+  .heading-section h2 {
+    font-size: 30px;
+  }
+
+  .ftco-section {
+    padding: 4em 0;
+  }
+
+  .ftco-counter .counter-wrap {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+
+#project-section .blog-entry {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+
+/* services */
+#services-section .services-1 {
+  border-radius: 5px;
+  transition: background .3s ease, transform .3s ease;
+}
+
+#services-section .services-1 p {
+  margin-bottom: 0;
+  transition: color .3s ease;
+}
+
+#services-section .services-1:hover {
+  transform: translateY(-5px);
+}
+
+#services-section .services-1:hover p {
+  color: #000;
+}
+
+@media (max-width: 767.98px) {
+  #services-section .services-1 {
+    margin-bottom: 20px;
+    padding: 1.5em;
+  }
+
+  #services-section .services-1 .icon i {
+    font-size: 48px;
+  }
+}
+
+
+/* contact form */
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.contact-form label .optional {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+  height: 52px;
+  padding: 12px 16px;
+  font-size: 15px;
+  color: #fff !important;
+  background: #161616 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 10px;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.contact-form textarea.form-control {
+  height: auto;
+  min-height: 130px;
+  resize: vertical;
+}
+
+.contact-form .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.contact-form .form-control:focus {
+  border-color: #ffbd39 !important;
+  box-shadow: 0 0 0 3px rgba(255, 189, 57, 0.2);
+  outline: none;
+}
+
+.contact-form .form-control.is-invalid {
+  border-color: #e5534b !important;
+}
+
+.contact-form .btn-send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  background: #ffbd39;
+  border: none;
+  border-radius: 10px;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.contact-form .btn-send:hover,
+.contact-form .btn-send:focus {
+  background: #ffcd66;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+.contact-form .btn-send:disabled {
+  opacity: .6;
+  transform: none;
+  cursor: wait;
+}
+
+.contact-form .form-status {
+  min-height: 1.5em;
+  margin: 15px 0 0;
+  text-align: center;
+}
+
+.contact-form .form-status.success { color: #5cd685; }
+.contact-form .form-status.error { color: #ff7b72; }
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Avishakh Chakrabortty</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Avishakh Chakrabortty</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+
+						<br>
+						<br>
+			            <h2>Undergraduate student</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/avishakh-chakrabortty-80b0632b8/" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="https://github.com/avishakh26" target="_blank" rel="noopener noreferrer" class="btn btn-white btn-outline-white py-3 px-4">Github</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+				<div class="row d-flex align-items-stretch">
+					<div class="col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/piccc.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Avishakh Chakrabortty</span></p>
+										<p><span class="title-s">Role: </span> <span>Student</span></p>
+										<p><span class="title-s">Experience: </span> <span>Improving my technical skills</span></p>
+										<p><span class="title-s">Address: </span> <span>Dhaka, Bangladesh</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Artificial Intelligence</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>HTML,CSS</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">65%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>I’m Avishakh Chakrabortty, an undergraduate student at Stamford University Bangladesh, pursuing a degree in Computer Science and Engineering.
+I’m passionate about web development, programming, and cybersecurity.
+Although I’m still building my professional experience, I’ve worked on several personal and academic projects that helped me strengthen my skills and creativity.
+I love learning new technologies, solving real-world problems, and continuously improving as a developer.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>University:</span> <span>Stamford University Bangladesh</span></li>
+									<!-- <li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li> -->
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Science in Computer Science & Engineering</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Bangla</span></li>
+									<!-- <li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li> -->
+									<li class="d-flex"><span>Other Skills:</span> <span>Python, Html, CSS, Git, Github, C, C++, FastAPI &amp; SQL</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>CyberSecurity,  AI &amp; Machine Learning</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="32">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://github.com/avishakh26" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-3 px-3">github</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Enthusiastic CSE undergraduate focusing on Artificial Intelligence and Web Development, eager to apply academic knowledge to real-world projects and collaborative environments.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2022-Present</span>
+						<h2>Tech Enthusiast</h2>
+						<span class="position">My Journey</span>
+						<p class="mt-4">Being a Tech Enthusiast means having a deep curiosity and passion for exploring emerging technologies, understanding how they work, and applying them to solve real-world problems.</p>
+								<ul>
+								<li>Always exploring new programming languages, frameworks, and AI tools to expand technical knowledge.</li>
+								<li>Building projects, prototypes, and small applications to understand concepts practically rather than just theoretically.</li>
+								<li>Always learning, always improving — one problem at a time.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2025</span>
+						<h2>Champion🏆</h2>
+						<span class="position">Memories</span>
+						<p class="mt-4">Continuously learning new technologies and improving coding, problem-solving, and analytical skills through projects and practice.</p>
+							<ul>
+								<li>Part of a three-member team that became champions of the 2025 Intra-University Programming Contest at Stamford University Bangladesh, outperforming 35+ competing teams. The contest tested our ability to solve challenging algorithmic and programming problems under time constraints, demonstrating strong collaboration, strategic thinking, and coding skills.</li>
+								<!-- <li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li> -->
+								<!-- <li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li> -->
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2022-Present</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">Stamford University Bangladesh</span>
+    					<p class="mt-4">CGPA : 3.44</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-2022</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Govt.Bangabandhu College,Khulna</span>
+    					<p class="mt-4">GPA : 5.00</p>
+    				</div>
+				</div>
+    		</div>
+
+
+				
+
+
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/drive/folders/1j0VBelOmVPNp0JJg7olZIUrXUqdt4BW2" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="services-section">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-10 col-lg-8 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Services</h1>
+            <h2 class="mb-4">Services</h2>
+            <p>Here is how I can help you. Whether you need a website, a Python tool, a bot or help learning to code, feel free to get in touch.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+            <div class="services-1 text-center">
+              <span class="icon"><i class="icon-laptop"></i></span>
+              <div class="desc">
+                <h3 class="mb-5">Web Development</h3>
+                <p>Clean, responsive websites and portfolios built with HTML, CSS and JavaScript that look great on phones, tablets and desktops.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+            <div class="services-1 text-center">
+              <span class="icon"><i class="icon-code"></i></span>
+              <div class="desc">
+                <h3 class="mb-5">Python Programming</h3>
+                <p>Custom Python scripts and applications, from small tools and games to complete projects, written to be clear and maintainable.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+            <div class="services-1 text-center">
+              <span class="icon"><i class="icon-cogs"></i></span>
+              <div class="desc">
+                <h3 class="mb-5">Automation &amp; Bots</h3>
+                <p>Discord bots and automation scripts that handle repetitive tasks, moderate communities and connect to external APIs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+            <div class="services-1 text-center">
+              <span class="icon"><i class="icon-lightbulb-o"></i></span>
+              <div class="desc">
+                <h3 class="mb-5">AI &amp; Machine Learning</h3>
+                <p>Simple AI and machine learning solutions such as data analysis, prediction models and smart features for your apps.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+            <div class="services-1 text-center">
+              <span class="icon"><i class="icon-database"></i></span>
+              <div class="desc">
+                <h3 class="mb-5">Database &amp; SQL</h3>
+                <p>Database design, SQL queries and data management to store, organise and report on your data efficiently.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+            <div class="services-1 text-center">
+              <span class="icon"><i class="icon-graduation-cap"></i></span>
+              <div class="desc">
+                <h3 class="mb-5">Programming Tutoring</h3>
+                <p>One-to-one help with C, C++, Python and problem solving for students who want to build strong programming fundamentals.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+          <div class="col-md-6 text-center ftco-animate">
+            <p><a href="#contact-section" class="btn btn-primary py-3 px-5 js-scroll-link">Hire Me</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Here are some of my projects that reflect my learning journey, creativity, and growing experience in programming and development.</p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/avishakh/project_spending_history" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('images/1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/avishakh/project_spending_history" target="_blank" rel="noopener noreferrer">Project Spending History</a></h3>
+                <p>A Python project that helps users record, track, and analyze their daily expenses.
+Designed to make personal finance management simple and organized.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/avishakh/goat_game-" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('images/2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/avishakh/goat_game-" target="_blank" rel="noopener noreferrer">Messi Ronaldo Game</a></h3>
+                <p>A Python mini-game designed to explore basic game mechanics and event handling.
+Features a playful goat character, making coding both fun and engaging.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/avishakh/Discord-BOTS" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('images/3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/avishakh/Discord-BOTS" target="_blank" rel="noopener noreferrer">A smart Discord Chatbot</a></h3>
+                <p>Built a Python-based Discord bot with modular commands, event handling, and API integrations.
+Focused on efficiency, automation, and user interaction.</p>
+              </div>
+            </div>
+          </div>
+			<div class="col-md-6 col-lg-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/avishakh/Python-Project-for-Classmates" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('images/4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/avishakh/Python-Project-for-Classmates" target="_blank" rel="noopener noreferrer">Basic Projects For Classmate</a></h3>
+				  <p>Multiple Python projects built to support classmates in understanding core programming concepts.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-6 col-lg-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/avishakh/fun_project" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/avishakh/fun_project" target="_blank" rel="noopener noreferrer">Funny Collection</a></h3>
+				  <p>A collection of my quirky experiments, jokes, and playful creations.
+Where humor meets creativity in code and ideas.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex">
+          <div class="col-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="16">0</strong>
+                <span>Client Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="32">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Problem Solved</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="645">0</strong>
+                <span>Creations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> Feel free to suggest me</h4>
+						<br>
+						<p><a href="https://github.com/avishakh26" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Have a project in mind or just want to say hi? Fill in the form and I'll get back to you soon.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-10 col-lg-7 ftco-animate">
+            <form id="contact-form" class="contact-form" novalidate>
+              <input type="text" name="_honey" class="d-none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+              <div class="form-group">
+                <label for="cf-name">Name</label>
+                <input type="text" id="cf-name" name="name" class="form-control" placeholder="Your full name" autocomplete="name" required>
+              </div>
+              <div class="form-group">
+                <label for="cf-email">Email</label>
+                <input type="email" id="cf-email" name="email" class="form-control" placeholder="you@example.com" autocomplete="email" required>
+              </div>
+              <div class="form-group">
+                <label for="cf-phone">Number <span class="optional">(optional)</span></label>
+                <input type="tel" id="cf-phone" name="phone" class="form-control" placeholder="+880 1XXX-XXXXXX" autocomplete="tel">
+              </div>
+              <div class="form-group">
+                <label for="cf-company">Company <span class="optional">(optional)</span></label>
+                <input type="text" id="cf-company" name="company" class="form-control" placeholder="Your company or organisation" autocomplete="organization">
+              </div>
+              <div class="form-group">
+                <label for="cf-message">Message</label>
+                <textarea id="cf-message" name="message" class="form-control" rows="5" placeholder="Tell me about your project or question..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-send">
+                <span class="icon-paper-plane" aria-hidden="true"></span>
+                <span class="btn-label">Send Message</span>
+              </button>
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+
+		  <div>
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-10 col-lg-8 ftco-animate text-center question-cta">
+					<h2>Have a<span> Question?  </span> <a href="https://wa.me/8801315792066" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex flex-wrap justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.youtube.com/@avishakhchakrabortty4094" target="_blank" rel="noopener noreferrer"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/avishakh-chakrabortty-80b0632b8/" target="_blank" rel="noopener noreferrer"><span class="icon-linkedin"></span></a></li> 
+					  <li class="ftco-animate"><a href="https://www.facebook.com/avishakh.chakrabortty" target="_blank" rel="noopener noreferrer"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/avishakh._.chakrabortty/" target="_blank" rel="noopener noreferrer"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Thanks for visiting my portfolio! Feel free to explore my projects and get in touch for any ideas or collaborations. <i class="icon-heart color-danger" aria-hidden="true"></i>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+  <script src="js/config.js"></script>
+  <script>
+  (function () {
+    var el = document.getElementById('typing-animation');
+    if (!el) return;
+    var texts = ['Engineer', 'Student', 'Web Developer'];
+    var t = 0, c = 0, deleting = false;
+    function tick() {
+      var word = texts[t];
+      c += deleting ? -1 : 1;
+      el.textContent = word.slice(0, c);
+      var delay = deleting ? 80 : 150;
+      if (!deleting && c === word.length) { deleting = true; delay = 1200; }
+      else if (deleting && c === 0) { deleting = false; t = (t + 1) % texts.length; delay = 400; }
+      setTimeout(tick, delay);
+    }
+    tick();
+  })();
+  </script>
+  <script>
+  (function () {
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+
+    // Messages are posted to a Discord channel through the webhook set in js/config.js (not committed).
+    var WEBHOOK_URL = (window.SITE_CONFIG || {}).discordWebhookUrl;
+    var COOLDOWN_MS = 30000;
+
+    var status = form.querySelector('.form-status');
+    var button = form.querySelector('.btn-send');
+    var label = button.querySelector('.btn-label');
+    var lastSent = 0;
+
+    function setStatus(text, type) {
+      status.textContent = text;
+      status.className = 'form-status' + (type ? ' ' + type : '');
+    }
+
+    // Trim to Discord's limits and stop markdown links/mentions from being abused.
+    function clean(value, max) {
+      value = String(value || '').trim().replace(/@/g, '@\u200b');
+      return value.length > max ? value.slice(0, max - 1) + '\u2026' : value;
+    }
+
+    function buildPayload(data) {
+      var fields = [
+        { name: 'Name', value: clean(data.name, 256), inline: true },
+        { name: 'Email', value: clean(data.email, 256), inline: true }
+      ];
+      if (data.phone) fields.push({ name: 'Number', value: clean(data.phone, 64), inline: true });
+      if (data.company) fields.push({ name: 'Company', value: clean(data.company, 256), inline: true });
+
+      return {
+        username: 'Portfolio Contact Form',
+        allowed_mentions: { parse: [] },
+        embeds: [{
+          title: 'New message from your portfolio',
+          description: clean(data.message, 4000),
+          color: 0xffbd39,
+          fields: fields,
+          footer: { text: location.hostname || 'portfolio' },
+          timestamp: new Date().toISOString()
+        }]
+      };
+    }
+
+    form.addEventListener('input', function (e) {
+      if (e.target.classList.contains('is-invalid') && e.target.checkValidity()) {
+        e.target.classList.remove('is-invalid');
+      }
+    });
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var firstInvalid = null;
+      form.querySelectorAll('[required], [type="email"]').forEach(function (field) {
+        field.value = field.value.trim();
+        var ok = field.checkValidity();
+        field.classList.toggle('is-invalid', !ok);
+        if (!ok && !firstInvalid) firstInvalid = field;
+      });
+      if (firstInvalid) {
+        setStatus('Please fill in your name, a valid email and a message.', 'error');
+        firstInvalid.focus();
+        return;
+      }
+
+      // bots fill the hidden field; pretend it worked
+      if (form._honey.value) {
+        form.reset();
+        setStatus("Thanks! Your message has been sent. I'll reply soon.", 'success');
+        return;
+      }
+
+      if (Date.now() - lastSent < COOLDOWN_MS) {
+        setStatus('Please wait a few seconds before sending another message.', 'error');
+        return;
+      }
+
+      var data = {
+        name: form.name.value,
+        email: form.email.value,
+        phone: form.phone.value,
+        company: form.company.value,
+        message: form.message.value
+      };
+
+      button.disabled = true;
+      label.textContent = 'Sending...';
+      setStatus('');
+
+      if (!WEBHOOK_URL) {
+        setStatus('Sorry, the contact form is not set up yet. Please email me at avishakh88@gmail.com.', 'error');
+        button.disabled = false;
+        label.textContent = 'Send Message';
+        return;
+      }
+
+      fetch(WEBHOOK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(buildPayload(data))
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error('Webhook responded ' + res.status);
+          lastSent = Date.now();
+          form.reset();
+          setStatus("Thanks! Your message has been sent. I'll reply soon.", 'success');
+        })
+        .catch(function () {
+          setStatus('Sorry, something went wrong. Please email me at avishakh88@gmail.com.', 'error');
+        })
+        .then(function () {
+          button.disabled = false;
+          label.textContent = 'Send Message';
+        });
+    });
+  })();
+  </script>
+    
+  </body>
+</html>
+
+
+
